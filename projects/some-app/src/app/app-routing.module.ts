@@ -14,7 +14,7 @@ const routes: Routes = [
   },
   {
     path: 'lib',
-    loadChildren: './lazy/some-lib-wrapper.module#SomeLibWrapperModule'
+    loadChildren: () => import('./lazy/some-lib-wrapper.module').then(m => m.SomeLibWrapperModule)
   },
   {
     path: 'lib-experimental',
