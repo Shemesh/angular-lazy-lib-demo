@@ -9,7 +9,7 @@
     "lint": "ng lint",
     "ci": "ng build --prod --deploy-url /angular-lazy-lib-demo/ --base-href /angular-lazy-lib-demo",
     "release": "standard-version && git push --follow-tags origin master",
-    "copy": "ncp shemesh-dist/my-org/some-lib node_modules/@my-org/some-lib"
+    "copy": "ncp shemesh-dist/my-org node_modules/@my-org"
   },
   "private": true,
   "dependencies": {
@@ -24,7 +24,7 @@
     "core-js": "^2.5.4",
     "rxjs": "~6.3.3",
     "zone.js": "~0.8.26",
-    "@my-org/some-lib": "file:C:/GitRepos/angular-lazy-lib-demo-shemesh/shemesh-dist/my-org/some-lib"
+    "@my-org/some-lib": "0.0.1"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~0.13.0",
